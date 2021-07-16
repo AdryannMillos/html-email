@@ -18,10 +18,10 @@ app.use(express.static("public"));
 
 
 var transporter = nodemailer.createTransport({
-    service: "outlook",
+    service: , /////// 'gmail' 'outlook'  etc////
     auth: {
-        user: 'adryann3@outlook.com',
-        pass: 'Titanio123'
+        user: '////// a@gmail.com',
+        pass: 'blablablabla'
     }
 
 });
@@ -45,8 +45,8 @@ const email = new Email({
   email.send({
       template: 'hello',
       message: {
-        from: 'adryann3@outlook.com',
-        to: 'adryann312@gmail.com',
+        from: '////// a@gmail.com',
+        to: '////////@outlook.com',
       },
       locals: {
         fname: '',
